@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{55A43D36-BF8E-4507-90C9-8354D6821E5E}</ProjectGuid>
+    <RootNamespace>facelib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../bin\</OutDir>
+    <IntDir>./build/debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\program\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\program\opencv\build\x86\vc12\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>J:\HSFaceIndeing_ver1.4_NoGabor_2013_NoTBB_2015_12_9_MultiDetector\bin\Win32Release</OutDir>
+    <IntDir>./build/debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\program\opencv\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\program\opencv\build\x86\vc12\lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Setup\opencv-2.4.11\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Setup\opencv-2.4.11\x64\vc12\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../3thparty/opencv200/include;../../3thparty/fann/include;../../3thparty/fftw/include;../../face;../../face/faceutil;../../face/feature;../../3thparty/pthread_win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FACELIB_EXPORTS;_STLP_USE_NEWALLOC;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opencv_core2411d.lib;opencv_highgui2411d.lib;opencv_imgproc2411d.lib;opencv_legacy2411d.lib;opencv_ml2411d.lib;opencv_objdetect2411d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../bin/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../3thparty/opencv200/lib;../../3thparty/fftw/lib;../../3thparty/pthread_win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../3thparty/opencv200/include;../../3thparty/fann/include;../../3thparty/fftw/include;../../face;../../face/faceutil;../../face/feature;../../3thparty/pthread_win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FACELIB_EXPORTS;_STLP_USE_NEWALLOC;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>cxcore200.lib;cv200.lib;cvaux200.lib;highgui200.lib;ml200.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../bin/$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../3thparty/opencv200/lib;../../3thparty/fftw/lib;../../3thparty/pthread_win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3thparty/opencv200/include;../../3thparty/fann/include;../../3thparty/fftw/include;../../face;../../face/faceutil;../../face/feature;../../3thparty/pthread_win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__SSE2__;WIN32;NDEBUG;_WINDOWS;_USRDLL;FACELIB_EXPORTS;_STLP_USE_NEWALLOC;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opencv_core2411.lib;opencv_highgui2411.lib;opencv_imgproc2411.lib;opencv_legacy2411.lib;opencv_ml2411.lib;opencv_objdetect2411.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../3thparty/opencv200/lib;../../3thparty/fftw/lib;../../3thparty/pthread_win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../3thparty/fann/include;../../face;../../face/faceutil;../../face/feature;../../3thparty/pthread_win32/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__SSE2__;WIN32;NDEBUG;_WINDOWS;_USRDLL;FACELIB_EXPORTS;_STLP_USE_NEWALLOC;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>16Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opencv_core2411.lib;opencv_highgui2411.lib;opencv_imgproc2411.lib;opencv_legacy2411.lib;opencv_ml2411.lib;opencv_objdetect2411.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../3thparty/fftw/lib;../../3thparty/pthread_win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\face\cxboost.cpp" />
+    <ClCompile Include="..\..\face\cxboostfacerecog.cpp" />
+    <ClCompile Include="..\..\face\cxcasboost.cpp" />
+    <ClCompile Include="..\..\face\cxcompdetector.cpp" />
+    <ClCompile Include="..\..\face\cxcompdetector7pt.cpp" />
+    <ClCompile Include="..\..\face\cxfaceanalyzer.cpp" />
+    <ClCompile Include="..\..\face\cxmcboost.cpp" />
+    <ClCompile Include="..\..\face\faceutil\cxfaceutil.cpp" />
+    <ClCompile Include="..\..\face\faceutil\cxhaarclassifier.cpp" />
+    <ClCompile Include="..\..\face\faceutil\facelistxml.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\face\feature\cxslidewinfea.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\face\feature\integrafea.cpp" />
+    <ClCompile Include="..\..\face\cxlibface.cpp" />
+    <ClCompile Include="..\..\3thparty\fann\src\fann.c" />
+    <ClCompile Include="..\..\3thparty\fann\src\fann_cascade.c" />
+    <ClCompile Include="..\..\3thparty\fann\src\fann_error.c" />
+    <ClCompile Include="..\..\3thparty\fann\src\fann_io.c" />
+    <ClCompile Include="..\..\3thparty\fann\src\fann_train.c" />
+    <ClCompile Include="..\..\3thparty\fann\src\fann_train_data.c" />
+    <ClCompile Include="..\..\face\NewFaceDetector\ColorGMM.cpp" />
+    <ClCompile Include="..\..\face\NewFaceDetector\Common_Func.cpp" />
+    <ClCompile Include="..\..\face\NewFaceDetector\FaceDetection.cpp" />
+    <ClCompile Include="..\..\face\NewFaceDetector\FaceSkinImage.cpp" />
+    <ClCompile Include="..\..\face\NewFaceDetector\Frontal_Realboosting_Dll.cpp" />
+    <ClCompile Include="..\..\face\NewFaceDetector\HvChainCascadeClassifier.cpp" />
+    <ClCompile Include="..\..\face\NewFaceDetector\HvChainStageClassifier.cpp" />
+    <ClCompile Include="..\..\face\NewFaceDetector\HvRealHaarClassifier.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\face\cxboost.hpp" />
+    <ClInclude Include="..\..\face\cxboostfacerecog.hpp" />
+    <ClInclude Include="..\..\face\cxcasboost.hpp" />
+    <ClInclude Include="..\..\face\cxcompdetbase.hpp" />
+    <ClInclude Include="..\..\face\cxcompdetector.hpp" />
+    <ClInclude Include="..\..\face\cxcompdetector7pt.hpp" />
+    <ClInclude Include="..\..\face\cxface.h" />
+    <ClInclude Include="..\..\face\cxface.hpp" />
+    <ClInclude Include="..\..\face\cxfaceanalyzer.hpp" />
+    <ClInclude Include="..\..\face\cxmcboost.hpp" />
+    <ClInclude Include="..\..\face\cxrecognizerbase.hpp" />
+    <ClInclude Include="..\..\face\faceutil\basetypes.hpp" />
+    <ClInclude Include="..\..\face\faceutil\cxdelighting.hpp" />
+    <ClInclude Include="..\..\face\faceutil\cxfaceutil.hpp" />
+    <ClInclude Include="..\..\face\faceutil\cxhaarclassifier.hpp" />
+    <ClInclude Include="..\..\face\faceutil\cxoptions.hpp" />
+    <ClInclude Include="..\..\face\faceutil\cxvideocap.hpp" />
+    <ClInclude Include="..\..\face\faceutil\facelistxml.hpp" />
+    <ClInclude Include="..\..\face\faceutil\postMerge.hpp" />
+    <ClInclude Include="..\..\face\faceutil\vecmath.hpp" />
+    <ClInclude Include="..\..\face\feature\cxslidewinfea.hpp" />
+    <ClInclude Include="..\..\face\feature\integrafea.hpp" />
+    <ClInclude Include="..\..\face\feature\lbp.hpp" />
+    <ClInclude Include="..\..\face\cxlibface.hpp" />
+    <ClInclude Include="..\..\3thparty\fann\include\compat_time.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\config.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\doublefann.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann_activation.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann_cascade.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann_cpp.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann_data.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann_error.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann_internal.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann_io.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fann_train.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\fixedfann.h" />
+    <ClInclude Include="..\..\3thparty\fann\include\floatfann.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\ColorGMM.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\Common_Func.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\Const.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\FaceDetection.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\FaceSkinImage.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\FD_Data.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\FrontalModel.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\FrontalModel_2015_11_16.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\FrontalModel_24.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\Frontal_Realboosting_Dll.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\HvChainCascadeClassifier.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\HvChainStageClassifier.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\HvRealHaarClassifier.h" />
+    <ClInclude Include="..\..\face\NewFaceDetector\HvTrain.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

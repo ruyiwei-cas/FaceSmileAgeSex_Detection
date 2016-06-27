@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="console">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\face\cxlibface.hpp">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="cxoptions.hpp">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\basetypes.hpp" />
+    <ClInclude Include="..\..\scene\compute_feature.h" />
+    <ClInclude Include="FaceDetectionUtility.h" />
+    <ClInclude Include="FaceRecognitionUtility.h" />
+    <ClInclude Include="HumanClothesHistUtility.h" />
+    <ClInclude Include="FaceRegistrationUtility.h" />
+    <ClInclude Include="PhotoIndexingUtility.h" />
+    <ClInclude Include="..\..\Platform.h">
+      <Filter>console</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneClassificationDLL.h" />
+    <ClInclude Include="ContextBasedFaceRecognitionDLL.h">
+      <Filter>console</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceDetectionUtility.cpp">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceRecognitionUtility.cpp">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceRegistrationUtility.cpp">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="PhotoIndexingUtility.cpp">
+      <Filter>console</Filter>
+    </ClCompile>
+    <ClCompile Include="ContextFaceRecognition.cpp">
+      <Filter>console</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

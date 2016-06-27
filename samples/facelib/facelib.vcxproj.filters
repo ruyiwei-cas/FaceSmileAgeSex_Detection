@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="face">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="face\util">
+      <UniqueIdentifier>{f99e7199-a532-46a2-8e24-309e59585fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="face\feature">
+      <UniqueIdentifier>{0af2d671-a56f-432e-a915-05a3f19ba148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="fann">
+      <UniqueIdentifier>{665af610-6273-4a20-85fc-2d93c1258153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fann\include">
+      <UniqueIdentifier>{a7f114b6-038a-4645-ab04-4a221a65c9c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NewFaceDetector">
+      <UniqueIdentifier>{3642bc5a-b2e3-418d-ada9-7cb6bb63ad4c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\face\cxboost.cpp">
+      <Filter>face</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\cxboostfacerecog.cpp">
+      <Filter>face</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\cxcasboost.cpp">
+      <Filter>face</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\cxcompdetector.cpp">
+      <Filter>face</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\cxcompdetector7pt.cpp">
+      <Filter>face</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\cxfaceanalyzer.cpp">
+      <Filter>face</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\cxmcboost.cpp">
+      <Filter>face</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\faceutil\cxfaceutil.cpp">
+      <Filter>face\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\faceutil\cxhaarclassifier.cpp">
+      <Filter>face\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\faceutil\facelistxml.cpp">
+      <Filter>face\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\feature\cxslidewinfea.cpp">
+      <Filter>face\feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\feature\integrafea.cpp">
+      <Filter>face\feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\cxlibface.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3thparty\fann\src\fann.c">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3thparty\fann\src\fann_cascade.c">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3thparty\fann\src\fann_error.c">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3thparty\fann\src\fann_io.c">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3thparty\fann\src\fann_train.c">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3thparty\fann\src\fann_train_data.c">
+      <Filter>fann</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\NewFaceDetector\ColorGMM.cpp">
+      <Filter>NewFaceDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\NewFaceDetector\Common_Func.cpp">
+      <Filter>NewFaceDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\NewFaceDetector\FaceDetection.cpp">
+      <Filter>NewFaceDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\NewFaceDetector\FaceSkinImage.cpp">
+      <Filter>NewFaceDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\NewFaceDetector\Frontal_Realboosting_Dll.cpp">
+      <Filter>NewFaceDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\NewFaceDetector\HvChainCascadeClassifier.cpp">
+      <Filter>NewFaceDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\NewFaceDetector\HvChainStageClassifier.cpp">
+      <Filter>NewFaceDetector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\face\NewFaceDetector\HvRealHaarClassifier.cpp">
+      <Filter>NewFaceDetector</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\face\cxboost.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxboostfacerecog.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxcasboost.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxcompdetbase.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxcompdetector.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxcompdetector7pt.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxface.h">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxface.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxfaceanalyzer.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxmcboost.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxrecognizerbase.hpp">
+      <Filter>face</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\basetypes.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\cxdelighting.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\cxfaceutil.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\cxhaarclassifier.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\cxoptions.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\cxvideocap.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\facelistxml.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\postMerge.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\faceutil\vecmath.hpp">
+      <Filter>face\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\feature\cxslidewinfea.hpp">
+      <Filter>face\feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\feature\integrafea.hpp">
+      <Filter>face\feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\feature\lbp.hpp">
+      <Filter>face\feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\cxlibface.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\compat_time.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\config.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\doublefann.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann_activation.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann_cascade.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann_cpp.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann_data.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann_error.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann_internal.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann_io.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fann_train.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\fixedfann.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3thparty\fann\include\floatfann.h">
+      <Filter>fann\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\ColorGMM.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\Common_Func.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\Const.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\FaceDetection.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\FaceSkinImage.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\FD_Data.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\Frontal_Realboosting_Dll.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\FrontalModel.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\FrontalModel_24.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\FrontalModel_2015_11_16.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\HvChainCascadeClassifier.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\HvChainStageClassifier.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\HvRealHaarClassifier.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\face\NewFaceDetector\HvTrain.h">
+      <Filter>NewFaceDetector</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
