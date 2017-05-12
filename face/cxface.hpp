@@ -8,7 +8,7 @@
 ***
 *** Embedded Application Lab, Intel Labs China.
 **/
-
+ //new      
 #ifndef _CX_FACE_HPP_
 #define _CX_FACE_HPP_
 
